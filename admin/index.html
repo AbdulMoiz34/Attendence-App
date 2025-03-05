@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Home - LMS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Admin Panel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNavbar"
+                aria-controls="adminNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="adminNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Attendance Record</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Add New Student</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="mt-4">Students Overview</h2>
+        <div class="table-responsive">
+            <div class="d-flex flex-column align-items-center mt-5">
+                <div>Currently, Students are not available!</div>
+                <a href="../addNewStudent/index.html" class="mt-2">Add Students</a>
+            </div>
+            <!-- <table class="table table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Roll No.</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>John Doe</td>
+                        <td>Mathematics</td>
+                        <td>john.doe@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Jane Smith</td>
+                        <td>Physics</td>
+                        <td>jane.smith@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Bob Johnson</td>
+                        <td>Chemistry</td>
+                        <td>bob.johnson@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Bob Johnson</td>
+                        <td>Chemistry</td>
+                        <td>bob.johnson@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Bob Johnson</td>
+                        <td>Chemistry</td>
+                        <td>bob.johnson@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Bob Johnson</td>
+                        <td>Chemistry</td>
+                        <td>bob.johnson@example.com</td>
+                    </tr>
+                </tbody>
+            </table> -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
