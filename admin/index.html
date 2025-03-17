@@ -12,7 +12,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light top-0 position-sticky">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Admin Panel</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNavbar"
@@ -22,10 +22,16 @@
             <div class="collapse navbar-collapse" id="adminNavbar">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Attendance Record</a>
+                        <a class="nav-link active" href="/admin">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Add New Student</a>
+                        <a class="nav-link" href="../attendenceRecord/index.html">Attendance Record</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/markAttendence/index.html">Mark Attendance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../addNewStudent/index.html">Add New Student</a>
                     </li>
                 </ul>
             </div>
@@ -36,58 +42,23 @@
     <div class="container">
         <h2 class="mt-4">Students Overview</h2>
         <div class="table-responsive">
-            <div class="d-flex flex-column align-items-center mt-5">
+            <div class="d-flex flex-column align-items-center mt-5 d-none no-std-box">
                 <div>Currently, Students are not available!</div>
                 <a href="../addNewStudent/index.html" class="mt-2">Add Students</a>
             </div>
-            <!-- <table class="table table-hover">
+            <table class="table table-hover d-none">
                 <thead class="table-dark">
                     <tr>
                         <th>Roll No.</th>
                         <th>Name</th>
                         <th>Course</th>
                         <th>Email</th>
+                        <th>CNIC NO</th>
+                        <th></th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>101</td>
-                        <td>John Doe</td>
-                        <td>Mathematics</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>102</td>
-                        <td>Jane Smith</td>
-                        <td>Physics</td>
-                        <td>jane.smith@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>103</td>
-                        <td>Bob Johnson</td>
-                        <td>Chemistry</td>
-                        <td>bob.johnson@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>103</td>
-                        <td>Bob Johnson</td>
-                        <td>Chemistry</td>
-                        <td>bob.johnson@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>103</td>
-                        <td>Bob Johnson</td>
-                        <td>Chemistry</td>
-                        <td>bob.johnson@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>103</td>
-                        <td>Bob Johnson</td>
-                        <td>Chemistry</td>
-                        <td>bob.johnson@example.com</td>
-                    </tr>
-                </tbody>
-            </table> -->
+                <tbody class="student-table-body"></tbody>
+            </table>
         </div>
     </div>
 

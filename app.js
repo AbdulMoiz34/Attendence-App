@@ -1,4 +1,8 @@
 const notyf = new Notyf();
+const isLogin = localStorage.getItem("isLogin");
+if (isLogin === "true") {
+    location = "/admin";
+}
 // Toggle Password functionality.
 const togglePassword = document.querySelector('#togglePassword');
 const passwordInput = document.querySelector('#password');
@@ -16,8 +20,8 @@ togglePassword.addEventListener("click", () => {
 
 // check username and password.
 const loginHandler = () => {
-    const email = "abc";
-    const password = "abc";
+    const email = "12345";
+    const password = "12345";
     const adminEmail = document.querySelector("#username");
     const adminPassword = document.querySelector("#password");
     if (!adminEmail.value.trim()) {
@@ -26,6 +30,7 @@ const loginHandler = () => {
     else if (email === adminEmail.value) {
         if (password === adminPassword.value) {
             notyf.success("login succesful.");
+            localStorage.setItem("isLogin", true);
             location = "/admin";
         } else {
             notyf.error("Password isn't correct.");
